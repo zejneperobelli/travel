@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+.main {
+  padding: 80px;
+  text-align: center;
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    div {
+      background: $white;
+      padding: 30px;
+      border-radius: $radius;
+      box-shadow: $shadow;
+
+      img {
+        width: 70px;
+        margin: 0 auto 20px;
+      }
+    }
+  }
+}

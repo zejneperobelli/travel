@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+footer {
+  background: #eef6fb;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .contactus {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+
+    i { color: $primary; }
+  }
+
+  .social-icons a {
+    color: $primary;
+    margin-right: 10px;
+  }
+}

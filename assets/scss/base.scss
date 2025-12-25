@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+}
+
+body {
+  background: #fdfefe;
+  color: $text-dark;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.fade-up {
+  animation: fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#menu a.active {
+  color: $primary;
+  font-weight: 600;
+}
+

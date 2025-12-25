@@ -1,0 +1,27 @@
+.plan {
+  background: #eaf6fb;
+  padding: 80px;
+  text-align: center;
+}
+.plan form {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.plan form #message {
+  grid-column: 1/-1;
+}
+.plan form input {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.plan form #submit {
+  grid-column: 1/-1;
+  background: #5fa8d3;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}

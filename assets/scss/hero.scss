@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+.container {
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  padding: 120px 80px;
+  position: relative;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255,255,255,.9) 35%,
+      rgba(255,255,255,0)
+    );
+  }
+
+  > div {
+    position: relative;
+    max-width: 500px;
+  }
+
+  span.name {
+    font-size: 48px;
+    color: $primary;
+  }
+
+  h1 { font-size: 52px; }
+
+  p {
+    color: $text-light;
+    margin-bottom: 30px;
+  }
+
+  button {
+    background: $primary;
+    color: $white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+}
+
+.btn-primary {
+  display: inline-block;
+  background: $primary;
+  color: $white;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: $shadow;
+  transition: all .3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+  opacity: .95;
+}

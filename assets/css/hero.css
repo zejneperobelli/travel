@@ -1,0 +1,60 @@
+.container {
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  padding: 120px 80px;
+  position: relative;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 35%, rgba(255, 255, 255, 0));
+}
+.container > div {
+  position: relative;
+  max-width: 500px;
+}
+.container span.name {
+  font-size: 48px;
+  color: #5fa8d3;
+}
+.container h1 {
+  font-size: 52px;
+}
+.container p {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+.container button {
+  background: #5fa8d3;
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #5fa8d3;
+  color: #ffffff;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  opacity: 0.95;
+}

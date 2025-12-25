@@ -1,0 +1,45 @@
+#taskbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 80px;
+  background: #ffffff;
+}
+#taskbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+#taskbar .logo img {
+  width: 40px;
+}
+#taskbar .logo h1 {
+  font-size: 20px;
+  color: #5fa8d3;
+}
+#taskbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+#taskbar a {
+  text-decoration: none;
+  color: #1f2933;
+}
+#taskbar .hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}

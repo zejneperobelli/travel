@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+#taskbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: $white;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img { width: 40px; }
+
+    h1 {
+      font-size: 20px;
+      color: $primary;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-dark;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+  }
+}

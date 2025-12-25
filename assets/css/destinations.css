@@ -1,0 +1,86 @@
+.destinations {
+  padding: 80px;
+  text-align: center;
+}
+.destinations .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+.destinations .destination {
+  aspect-ratio: 1/1;
+  height: auto;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px;
+  color: #ffffff;
+  background-size: cover;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.destinations .santorini {
+  background-image: url("../images/santorini.jpg");
+}
+.destinations .bali {
+  background-image: url("../images/bali.jpg");
+}
+.destinations .paris {
+  background-image: url("../images/paris.jpg");
+}
+.destinations .maldives {
+  background-image: url("../images/maldives.jpg");
+}
+
+.destinations-page {
+  padding: 80px;
+  text-align: center;
+}
+.destinations-page h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+.destinations-page .destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.destinations-page .destination-card {
+  background: #fff;
+  color: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.destinations-page .destination-card:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.destinations-page .destination-card .destination-card img {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.destinations-page .destination-card img {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.destinations-page .destination-card h3 {
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 600;
+}

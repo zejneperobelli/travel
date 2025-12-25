@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+.plan {
+  background: $secondary;
+  padding: 80px;
+  text-align: center;
+
+  form {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    #message { grid-column: 1 / -1; }
+
+    input {
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    #submit {
+      grid-column: 1 / -1;
+      background: $primary;
+      color: $white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
+}
